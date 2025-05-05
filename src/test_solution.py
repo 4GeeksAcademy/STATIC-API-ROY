@@ -40,6 +40,8 @@ def test_add_empty_response_body(client):
     })
     assert response.data != b"", "The POST /members method should return something, NOT EMPTY"
 
+    
+
 
 @pytest.mark.it("Implement the GET /members method")
 def test_get_members_exist(client):
